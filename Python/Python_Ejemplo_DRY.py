@@ -8,7 +8,7 @@ Created on Fri Jun 12 08:18:36 2020
 # Ejemplo DRY 
 # Dont repeat yourself 
 
-# Ejemplo de codigo con estructuras  
+# Ejemplo de código con estructuras demasiados IF  
 def mostrar_mes(numero):
     if numero == 1:
         return "Enero"
@@ -35,7 +35,7 @@ def mostrar_mes(numero):
     if numero == 12:
         return "Diciembre"
     else:
-        return "Número no coincide con ningun mes"
+        return "Número no coincide con ningún mes"
 numero = 22    
 print(mostrar_mes(numero))
 
@@ -45,7 +45,7 @@ meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Sept
 
 def mostrar_mes_DRY(numero):
     if numero < 1 or numero > 12:
-        return "Número no coincide con ningun mes"
+        return "Número no coincide con ningún mes"
     else:
        return meses[numero-1]
     
